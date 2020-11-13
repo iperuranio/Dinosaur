@@ -13,6 +13,8 @@
 		2429A928255EECE900DF7E93 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2429A926255EECE900DF7E93 /* Main.storyboard */; };
 		2429A92A255EECEA00DF7E93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2429A929255EECEA00DF7E93 /* Assets.xcassets */; };
 		2429A92D255EECEA00DF7E93 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2429A92B255EECEA00DF7E93 /* LaunchScreen.storyboard */; };
+		2429A93B255EF60400DF7E93 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2429A93A255EF60400DF7E93 /* Extensions.swift */; };
+		2429A945255F29CD00DF7E93 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2429A944255F29CD00DF7E93 /* GameScene.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		2429A929255EECEA00DF7E93 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2429A92C255EECEA00DF7E93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2429A92E255EECEA00DF7E93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2429A93A255EF60400DF7E93 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		2429A944255F29CD00DF7E93 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,49 @@
 		2429A91F255EECE900DF7E93 /* Dinosaur */ = {
 			isa = PBXGroup;
 			children = (
+				249F2330255F307500B63370 /* Extras */,
+				249F232F255F305A00B63370 /* Storyboards */,
+				249F232E255F304700B63370 /* Scenes */,
+				249F232D255F303400B63370 /* ViewController */,
 				2429A920255EECE900DF7E93 /* AppDelegate.swift */,
 				2429A922255EECE900DF7E93 /* SceneDelegate.swift */,
-				2429A924255EECE900DF7E93 /* ViewController.swift */,
-				2429A926255EECE900DF7E93 /* Main.storyboard */,
 				2429A929255EECEA00DF7E93 /* Assets.xcassets */,
-				2429A92B255EECEA00DF7E93 /* LaunchScreen.storyboard */,
 				2429A92E255EECEA00DF7E93 /* Info.plist */,
 			);
 			path = Dinosaur;
+			sourceTree = "<group>";
+		};
+		249F232D255F303400B63370 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2429A924255EECE900DF7E93 /* ViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		249F232E255F304700B63370 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				2429A944255F29CD00DF7E93 /* GameScene.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		249F232F255F305A00B63370 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				2429A926255EECE900DF7E93 /* Main.storyboard */,
+				2429A92B255EECEA00DF7E93 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		249F2330255F307500B63370 /* Extras */ = {
+			isa = PBXGroup;
+			children = (
+				2429A93A255EF60400DF7E93 /* Extensions.swift */,
+			);
+			path = Extras;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +175,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2429A945255F29CD00DF7E93 /* GameScene.swift in Sources */,
 				2429A925255EECE900DF7E93 /* ViewController.swift in Sources */,
+				2429A93B255EF60400DF7E93 /* Extensions.swift in Sources */,
 				2429A921255EECE900DF7E93 /* AppDelegate.swift in Sources */,
 				2429A923255EECE900DF7E93 /* SceneDelegate.swift in Sources */,
 			);
@@ -296,7 +336,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.claxon007.Dinosaur;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -315,7 +355,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.claxon007.Dinosaur;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
